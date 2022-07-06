@@ -1,0 +1,96 @@
+@value --main-div-width from "./shared.css";
+@value --background-color from "./shared.css";
+@value --font-color from "./shared.css";
+@value --font-family from "./shared.css";
+@value --input-background-color from "./shared.css";
+
+
+html {
+    background-color: var(--background-color);
+}
+
+.main-div {
+    margin: auto;
+    width: var(--main-div-width);
+    height: max-content;
+    text-align: center;
+    color:var(--font-color);
+    font-family: var(--font-family);
+    text-align: left;
+}
+
+/* headers and its buttons CSS */
+.main-header{
+    margin: auto;
+    width: var(--main-div-width);
+    height: 5vh;
+    text-align: -webkit-center;
+}
+
+.header-button-friends{
+    float:right;
+    border-radius: 100%;
+}
+
+.header-button-friends-img{
+    float: right;
+    width: 3vh;
+    height: 3vh;
+}
+
+/* above post section CSS */
+
+.main-text-writter {
+    width: auto;
+}
+
+.textarea, .post-edit-textarea {
+    width: -webkit-fill-available;
+    height: 15vh;
+    resize: none;
+    background-color: var(--input-background-color);
+    color: white;
+    font-family: var(--font-family);
+}
+
+.search-input{
+    border: none;
+    background-color: var(--input-background-color);
+    outline: none;
+    color:var(--font-color);
+    height: 75%;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.search-input:focus{
+    outline-width: 1px;
+    outline-color: white;
+    outline-style: solid;
+    color:var(--font-color);
+}
+
+.confirmButton {
+    float: right;
+}
+
+.main-text-bottom {
+    width: 100%;
+    margin: auto;
+}
+
+/* For devices smaller than 1024px width*/
+@media only screen and (max-width: 1024px) {
+    :root{
+        --main-div-width: 90%;
+    }
+}
+
+
+/* For devices bigger than 1024px width*/
+@media only screen and (min-width: 1025px) {
+    :root{
+        --main-div-width: 45%;
+    }
+}
+

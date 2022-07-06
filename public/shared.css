@@ -1,0 +1,8 @@
+:root {
+    --main-div-width: 45%;
+    --background-color: rgb(41, 41, 41);
+    --font-color: rgb(183, 183, 183);
+    --font-hover-color:rgb(107, 107, 107);
+    --font-family: sans-serif;
+    --input-background-color: #80808040;
+}

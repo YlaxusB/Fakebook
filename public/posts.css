@@ -1,0 +1,87 @@
+@value --main-div-width from "./shared.css";
+@value --background-color from "./shared.css";
+@value --font-color from "./shared.css";
+@value --font-hover-color from "./shared.css";
+@value --font-family from "./shared.css";
+@value --input-background-color from "./shared.css";
+
+/* Posts CSS */
+
+.post-main-div {
+    margin-top: 5%;
+    border: 2px solid rgb(27, 27, 27);
+    box-shadow: 1.4px 2px #00000014;
+    overflow:auto;
+    min-height: 10vh;
+    max-height: 75vh;
+    color: var(--font-color);
+    font-family: var(--font-family);
+}
+
+.post-header {
+    display: flex;
+    height: 5vh;
+}
+
+.post-avatarImage {
+    height: 100%;
+    width: 5vh;
+    object-fit: cover;
+    border-radius:  100%;
+}
+
+.post-header h1 {
+    font-size: 15px;
+}
+
+.post-content-div{
+    word-wrap: break-word;
+}
+
+a:link, a:visited{
+    align-self: center; 
+    color:var(--font-color);
+    text-decoration: none;
+}
+
+.post-date{
+    padding-left: 5%;
+    align-self: center; 
+}
+
+a:hover{
+    color:var(--font-hover-color);
+}
+
+.post-bottom {
+    height: 5vh;
+    display: flex;
+}
+
+.post-like-div, .post-edit-div, .post-remove-div, .post-edit-done-div{
+    display: flex;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    object-fit: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.post-edit-done-div{
+    margin-left: auto;
+}
+
+.post-remove-image, .post-edit-image, .post-like-image, .post-edit.done-image{
+    height: 3vh;
+    width: 3vh;
+    object-fit:cover;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+}
+
+.post-like-div:hover, .post-edit-div:hover, .post-remove-div:hover, .post-edit-done-div:hover{
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+}

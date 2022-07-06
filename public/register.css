@@ -1,0 +1,49 @@
+input{
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    border:none;
+
+
+}
+
+#main{
+    display:flex;
+}
+
+#main-login, #main-register{
+    width: 300px;
+    height: 260px;
+    white-space: 10px;
+    text-align: center;
+}
+
+#main-register{
+    margin-left: auto;
+}
+
+#main-login{
+    margin-right: auto;
+    margin-left: 50px;
+
+}
+
+input{
+    border: solid 1px;
+    box-shadow: grey 1px 3px;
+    margin: 8px;
+}
+
+.main-div{
+    /*background-color: #404040;*/
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+html{
+    background-color:#525252;
+}

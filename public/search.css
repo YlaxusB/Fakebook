@@ -1,0 +1,20 @@
+@value --main-div-width from "./shared.css";
+@value --background-color from "./shared.css";
+@value --font-color from "./shared.css";
+@value --font-family from "./shared.css";
+@value --input-background-color from "./shared.css";
+
+/* For devices smaller than 1024px width*/
+@media only screen and (max-width: 1024px) {
+    :root{
+        --main-div-width: 90%;
+    }
+}
+
+
+/* For devices bigger than 1024px width*/
+@media only screen and (min-width: 1025px) {
+    :root{
+        --main-div-width: 45%;
+    }
+}
